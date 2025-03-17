@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | AttendAI</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Panel - AttendAI</h1>
+
+        <form id="addUserForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <button type="submit">➕ Add User</button>
+        </form>
+
+        <input type="text" id="searchInput" placeholder="🔍 Search Users...">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable"></tbody>
+            <footer>
+                <nav>
+                    <a href="#" class="active">🏠 Home</a>
+                    <a href="#">📅 Attendance</a>
+                    <a href="#">📜 History</a>
+                    <a href="login.html">🧑‍💻 Admin</a>
+                </nav>
+            </footer>
+        </table>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
