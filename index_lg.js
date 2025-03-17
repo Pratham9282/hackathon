@@ -11,7 +11,7 @@ document.getElementById('loginBtn').addEventListener('click', () => {
     // Simple email and password check (mock data for demo)
     if (email === 'admin@attendai.com' && password === 'admin123') {
         alert('✅ Login Successful! Redirecting...');
-        window.location.href = 'index.html';
+        window.location.href = 'main.html';
     } else {
         alert('❌ Invalid email or password. Please try again.');
     }
